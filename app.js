@@ -16,6 +16,10 @@ app.use('/categorias', categorias_router);
 const cliente_router = require ('./cliente.js');
 app.use('/cliente', cliente_router);
 
+//-----------------Tabla Vendedores
+const vendedores_router = require ('./vendedor.js');
+app.use('/vendedores', vendedores_router);
+
 //-----------------Tabla datos Personales
 const dat_pers_router = require ('./datos_personales');
 app.use('/datos_personales', dat_pers_router);
