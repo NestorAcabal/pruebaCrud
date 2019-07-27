@@ -12,6 +12,11 @@ app.use('/boletos', boletos_router);
 const categorias_router= require ('./categorias.js');
 app.use('/categorias', categorias_router);
 
+//----------------Tabla Clientes
+const cliente_router = require ('./cliente.js');
+app.use('/cliente', cliente_router);
+
+
 app.listen(4000, function () {
   console.log('app: 4000!');
 });
