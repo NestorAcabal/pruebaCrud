@@ -24,6 +24,9 @@ app.use('/vendedores', vendedores_router);
 const dat_pers_router = require ('./datos_personales');
 app.use('/datos_personales', dat_pers_router);
 
+//-----------------Tabla compras
+const compras_router = require ('./compras.js');
+app.use('/compras', compras_router);
 
 app.listen(4000, function () {
   console.log('app: 4000!');
