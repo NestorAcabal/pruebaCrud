@@ -32,6 +32,10 @@ app.use('/compras', compras_router);
 const encargado_router = require ('./encargado_sala.js');
 app.use('/encargados', encargado_router);
 
+//-----------------Tabla peliculas
+const peliculas_router = require ('./peliculas.js');
+app.use('/peliculas', peliculas_router);
+
 app.listen(4000, function () {
   console.log('app: 4000!');
 });
