@@ -28,6 +28,10 @@ app.use('/datos_personales', dat_pers_router);
 const compras_router = require ('./compras.js');
 app.use('/compras', compras_router);
 
+//-----------------Tabla encargados
+const encargado_router = require ('./encargado_sala.js');
+app.use('/encargados', encargado_router);
+
 app.listen(4000, function () {
   console.log('app: 4000!');
 });
